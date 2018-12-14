@@ -5,5 +5,5 @@ cd file-5.34 &&
 ./configure --prefix=/usr &&
 make && make install &&
 cd /sources &&
-rm -rvf file-5.34 &&
+rm -rvf file-5.34
 ```

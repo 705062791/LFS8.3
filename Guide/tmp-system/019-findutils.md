@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e findutils-4.6.0 ] && rm -rf findutils-4.6.0
 tar zxvf findutils-4.6.0.tar.gz &&
 cd findutils-4.6.0 &&
 sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' gl/lib/*.c &&

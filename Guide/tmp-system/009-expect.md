@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e expect5.45.4 ] && rm -rf expect5.45.4
 tar zxvf expect5.45.4.tar.gz &&
 cd expect5.45.4 &&
 cp -v configure{,.orig} &&

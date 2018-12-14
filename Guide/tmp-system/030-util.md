@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e util-linux-2.32.1 ] && rm -rf util-linux-2.32.1
 tar xvf util-linux-2.32.1.tar.xz &&
 cd util-linux-2.32.1 &&
 ./configure --prefix=/tools                \

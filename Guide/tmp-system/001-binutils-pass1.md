@@ -14,7 +14,10 @@ make &&
 case $(uname -m) in
   x86_64) mkdir -v /tools/lib && ln -sv lib /tools/lib64 ;;
 esac &&
+
 make install &&
 cd $LFS/sources &&
-rm -rf bibutils-2.31.1
+rm -rf bibutils-2.31.1 &&
+echo "sucessful install bibutils-2.31.1" &&
+echo "---------------------------------"
 ```

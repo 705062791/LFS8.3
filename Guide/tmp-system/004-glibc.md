@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e glibc-2.28 ] && rm -rf glibc-2.28
 tar xvf glibc-2.28.tar.xz &&
 cd glibc-2.28 &&
 mkdir -v build &&
@@ -13,12 +14,12 @@ cd       build &&
       libc_cv_forced_unwind=yes          \
       libc_cv_c_cleanup=yes &&
 make &&
-make install
+make install 
 ```
 *检查*
 ```bash
 echo 'int main(){}' > dummy.c
-LFS_TGT-gcc dummy.c
+$LFS_TGT-gcc dummy.c
 readelf -l a.out | grep ': /tools'
 ```
 *正确返回值*
@@ -27,6 +28,8 @@ readelf -l a.out | grep ': /tools'
 ```
 *清理*
 ```bash
-cd $LFS/sources
-rm -rf glibc-2.25
+cd $LFS/sources &&
+rm -rf glibc-2.25 &&
+echo "sucessful install glibc-2.25" &&
+echo "---------------------------------"
 ```

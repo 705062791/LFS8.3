@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e gzip-1.9 ] && rm -rf gzip-1.9
 tar xvf gzip-1.9.tar.xz &&
 cd gzip-1.9 &&
 sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c &&

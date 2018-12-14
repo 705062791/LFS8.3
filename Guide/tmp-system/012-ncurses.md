@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e ncurses-6.1 ] && rm -rf ncurses-6.1
 tar zxvf ncurses-6.1.tar.gz &&
 cd ncurses-6.1 &&
 sed -i s/mawk// configure &&

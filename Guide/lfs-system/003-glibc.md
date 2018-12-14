@@ -1,3 +1,4 @@
+# `make check` 会失败(详情见pdf教程), 故不使用
 ```bash
 cd /sources &&
 tar xvf glibc-2.28.tar.xz &&
@@ -24,12 +25,11 @@ CC="gcc -isystem $GCC_INCDIR -isystem /usr/include" \
              libc_cv_slibdir=/lib &&
 unset GCC_INCDIR &&
 make && 
-make check &&
 touch /etc/ld.so.conf &&
 sed '/test-installation/s@$(PERL)@echo not running@' -i ../Makefile &&
 make install &&
 cp -v ../nscd/nscd.conf /etc/nscd.conf &&
-mkdir -pv /var/cache/nscd &&
+mkdir -pv /var/cache/nscd
 ```
 *安装语言环境*
 ```bash
@@ -96,7 +96,7 @@ unset ZONEINFO
 ```
 *选择时区设置*
 ```bash
-tzselect
+# tzselect (未测试)
 
 cp -v /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```

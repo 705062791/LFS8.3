@@ -1,5 +1,5 @@
 ```bash
-cd sources &&
+cd /sources &&
 tar zxvf readline-7.0.tar.gz &&
 cd readline-7.0
 sed -i '/MV.*old/d' Makefile.in &&

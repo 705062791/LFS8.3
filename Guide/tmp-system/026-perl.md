@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e perl-5.28.0 ] && rm -rf perl-5.28.0
 tar xvf perl-5.28.0.tar.xz &&
 cd perl-5.28.0 &&
 sh Configure -des -Dprefix=/tools -Dlibs=-lm -Uloclibpth -Ulocincpth &&

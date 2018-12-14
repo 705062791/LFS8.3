@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e binutils-2.31.1 ] && rm -rf binutils-2.31.1
 tar xvf binutils-2.31.1.tar.xz &&
 cd binutils-2.31.1 &&
 mkdir -v build &&
@@ -19,5 +20,7 @@ make -C ld clean &&
 make -C ld LIB_PATH=/usr/lib:/lib &&
 cp -v ld/ld-new /tools/bin &&
 cd $LFS/sources &&
-rm -rf binutils-2.31.1
+rm -rf binutils-2.31.1 &&
+echo "sucessful install binutils-2.31.1" &&
+echo "---------------------------------"
 ```

@@ -1,5 +1,6 @@
 ```bash
-cd $LFS/sources &&
+cd $LFS/sources 
+[ -e texinfo-6.5 ] && rm -rf texinfo-6.5
 tar xvf texinfo-6.5.tar.xz &&
 cd texinfo-6.5 &&
 ./configure --prefix=/tools &&
