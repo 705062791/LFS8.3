@@ -12,7 +12,9 @@ su - lfs
 echo $LFS
 ```
 ### 2) 编译 <- 5.4~5.34
-**想偷懒可以`wget 待补全 && bash compile_tmp_sys.sh`一键安装, 不过不知道会不会出先问题,我自己没测试过,而且,脚本没进行`check`**
+**想偷懒可以`wget https://raw.githubusercontent.com/Jefung/LFS8.3/master/Scripts/compile_tmp_sys.sh && bash compile_tmp_sys.sh`
+一键安装, 不过不知道会不会出先问题,我自己没测试过,而且,脚本没进行`check`**
+
 *SBU 时间单位，以编译binutils为一个单位*
 
 *开头的数字对应`LFS8.3`PDF中的章节*
@@ -62,4 +64,4 @@ find /tools/{lib,libexec} -name \*.la -delete
 1. 切换`root`: `su root`
 2. 将 $LFS/tools 目录的属主改为 root 用户: `chown -R root:root $LFS/tools`
 ------------------------------------------------
-*[[上一页](001-prepare-host-system.md)]  [[下一页](003-build_lfs-system.md)]
+*[[上一页](001-prepare-host-system.md)]  [[下一页](003-build-lfs-system.md)]

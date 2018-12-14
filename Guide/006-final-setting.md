@@ -55,3 +55,7 @@ shutdown -r now
 ```
 ## 3. 效果图
 ![lsf8_3_screenshot.png](http://images.jefung.cn/lsf8_3_screenshot.png)
+
+---------------------------------------------
+#### *[[上一页](005-make-bootable-lfs-system.md)] [[首页](/README.md)]*
+-----------------------------------------------------------

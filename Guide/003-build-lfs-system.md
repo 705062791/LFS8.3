@@ -5,11 +5,11 @@
 ## 部分 III. 构建 LFS 系统: 第 6 章 Installing Basic System Software
 ### 1. 准备虚拟内核文件系统 <- 6.2
 
-切换用户:
+* 切换用户:
 ```
 su root
 ```
-
+* 准备环境
 ```bash
 mkdir -pv $LFS/{dev,proc,sys,run} 
 mknod -m 600 $LFS/dev/console c 5 1 
@@ -34,7 +34,7 @@ chroot "$LFS" /tools/bin/env -i \
     PATH=/bin:/usr/bin:/sbin:/usr/sbin:/tools/bin \
     /tools/bin/bash --login +h
 ```
-### 3. 创建目录和必要链接 <- 6.5-6.6
+### 3. 创建目录 <- 6.5
 ```bash
 mkdir -pv /{bin,boot,etc/{opt,sysconfig},home,lib/firmware,mnt,opt}
 mkdir -pv /{media/{floppy,cdrom},sbin,srv,var}
@@ -55,7 +55,7 @@ ln -sv /run /var/run
 ln -sv /run/lock /var/lock
 mkdir -pv /var/{opt,cache,lib/{color,misc,locate},local}
 ```
-### Creating Essential Files and Symlinks
+### 4. 创建必要文件和链接 <-6.6
 ```bash
 ln -sv /tools/bin/{bash,cat,dd,echo,ln,pwd,rm,stty} /bin
 ln -sv /tools/bin/{env,install,perl} /usr/bin
