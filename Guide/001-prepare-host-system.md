@@ -33,7 +33,7 @@ ps:
 ### 4) 检查并安装必备软件 <- 2.2
 *脚本检查: [version-check.sh](../Scripts/version-check.sh))*
 ```bash
-wget https://github.com/Jefung/LFS8.3/blob/master/Scripts/version-check.sh
+wget https://raw.githubusercontent.com/Jefung/LFS8.3/master/Scripts/version-check.sh
 bash version-check.sh
 ```
 *安装（以ubuntu16.04.1为例）*
