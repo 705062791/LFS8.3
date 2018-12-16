@@ -45,7 +45,7 @@ apt-get install bison gawk g++ make texinfo
 
 ps: 请按照步骤一步一步来
 1. VM给ubuntu增加硬盘容量并分区
-* 你可能需要的参考链接: [VMWare增加系统硬盘容量（扩容）的操作方法-CSDN博客](https://blog.csdn.net/legend02uwn/article/details/81502608)
+* 你可能需要的参考链接: [Vmware添加磁盘的方法：扩展磁盘 - 知行合一 止于至善 - CSDN博客](https://blog.csdn.net/liumiaocn/article/details/78877957)
 * 我在这里遇到一个问题:
 ![Image.png](http://images.jefung.cn/Image.png)
 2. 格式化分区
