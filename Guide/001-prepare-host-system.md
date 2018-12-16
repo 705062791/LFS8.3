@@ -42,13 +42,14 @@ apt-get install bison gawk g++ make texinfo
 ```
 
 ### 5) 创建分区系统, 格式化分区, 在分区上创建文件系统, 挂载分区 <- 2.4~2.7
-* 参考链接: [linux 硬盘分区，分区，删除分区，格式化，挂载，卸载笔记](https://blog.csdn.net/openn/article/details/9856451)
 
-1. 创建分区系统: VM给ubuntu增加硬盘并分区
-* 参考链接: [VMWare增加系统硬盘容量（扩容）的操作方法-CSDN博客](https://blog.csdn.net/legend02uwn/article/details/81502608)
+
+1. *VM给ubuntu增加硬盘容量并分区*
+* 你可能需要的参考链接: [VMWare增加系统硬盘容量（扩容）的操作方法-CSDN博客](https://blog.csdn.net/legend02uwn/article/details/81502608)
 * 我在这里遇到一个问题:
 ![Image.png](http://images.jefung.cn/Image.png)
-2. 格式化分区: 见上面的参考链接
+2. *格式化分区*
+* 参考链接: [linux 硬盘分区，分区，删除分区，格式化，挂载，卸载笔记](https://blog.csdn.net/openn/article/details/9856451)
 3. 在分区上创建文件系统: `mkfs -v -t ext4 /dev/分区设备名(改为自己的分区)`
 4. 挂载分区:
 ```bash
