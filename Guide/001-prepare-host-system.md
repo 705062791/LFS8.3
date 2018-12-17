@@ -45,6 +45,7 @@ apt-get install bison gawk g++ make texinfo
 
 ps: 请按照步骤一步一步来
 1. VM给ubuntu增加硬盘容量并分区
+* LFS8.3建议新分区容量为*20G*
 * 你可能需要的参考链接: [Vmware添加磁盘的方法：扩展磁盘 - 知行合一 止于至善 - CSDN博客](https://blog.csdn.net/liumiaocn/article/details/78877957) (ps: 你只需要看到有类似sda3这样的新分区就可以进行下一步了, 链接文章后面部分可以跳过)
 * 我在这里遇到一个问题:
 ![Image.png](http://images.jefung.cn/Image.png)
