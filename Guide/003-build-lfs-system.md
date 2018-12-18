@@ -160,7 +160,7 @@ chmod -v 600  /var/log/btmp
     * 直接复制粘贴, 要是担心一起安装出错, 可以一段一段粘贴运行
     * 下载运行:
     ```
-    wget 链接代填
+    wget https://raw.githubusercontent.com/Jefung/LFS8.3/master/Scripts/build_lfs_sys.sh
     bash build_lfs_sys.sh
     ```
 
