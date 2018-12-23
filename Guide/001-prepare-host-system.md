@@ -65,8 +65,9 @@ mount -v -t ext4 /dev/分区设备名(改为自己的分区) $LFS
 mkdir -v $LFS/sources
 chmod -v a+wt $LFS/sources
 ```
-2. 下载wget-list文件: `wget http://www.linuxfromscratch.org/lfs/downloads/stable-systemd/wget-list`
-3. 利用wget-list进行批量下载(耐心等待): `wget --input-file=wget-list --continue --directory-prefix=$LFS/sources`
+1. 下载wget-list文件: `wget https://raw.githubusercontent.com/Jefung/LFS8.3/master/Scripts/wget-list`
+2. 利用wget-list进行批量下载(耐心等待): `wget --input-file=wget-list --continue --directory-prefix=$LFS/sources`
+3. 检查下载文件数量是否完整: `ls -1 $LFS/sources | wc -l`
 
 ### 7) root用户创建编译工具链目录 <- 4.2
 ```bash
